@@ -4,18 +4,18 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class DummyEntity {
-
+public class PlayerEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
+    @Column(name = "id" , nullable = false)
     private Long id;
 
-    private String dummy;
+    private Integer fichas;
+
+    private String name;
 }
